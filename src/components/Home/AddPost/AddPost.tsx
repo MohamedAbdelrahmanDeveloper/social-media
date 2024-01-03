@@ -19,7 +19,7 @@ export default function AddPost() {
         <div className="flex space-x-5 items-center">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
             <div className="rounded-full">
-              <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <img alt="Tailwind CSS Navbar component" src="https://avatars.githubusercontent.com/u/54208900?v=4" />
             </div>
           </div>
           <textarea onChange={(e) => setTextLength(e.target.value.length)} className="textarea focus:ring-0 focus:border-none flex-1 placeholder:text-base h-auto"  placeholder="What's on your mind?" ></textarea>
