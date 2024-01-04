@@ -1,8 +1,10 @@
 import React from 'react'
 import Card from '../global/Card'
-import ButtonIcon from '../Home/AddPost/ButtonIcon'
-import { ArrowPathIcon, ChatBubbleOvalLeftIcon, EllipsisHorizontalIcon, HeartIcon } from '@heroicons/react/24/outline'
+import { EllipsisHorizontalIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import Like from './Like'
+import Comments from './Comments'
+import Reposts from './Reposts'
 
 export default function Post() {
   return (
@@ -25,9 +27,9 @@ export default function Post() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est nisi enim cumque quisquam molestias quaerat alias iusto voluptatibus ad sit, voluptatum provident necessitatibus reprehenderit voluptatem distinctio labore nobis eligendi fugiat vitae nam molestiae magnam, exercitationem fugit! Ipsa optio, incidunt dolor natus nostrum, vero assumenda esse reiciendis quibusdam adipisci veritatis!</p>
         </div>
         <div className='card-actions text-base-content/70'>
-            <ChatBubbleOvalLeftIcon className='w-7'/>
-            <ArrowPathIcon className='w-7'/>
-            <HeartIcon className='w-7'/>
+            <Comments />
+            <Reposts />
+            <Like />
             <EllipsisHorizontalIcon className='w-7'/>
         </div>
     </Card>
