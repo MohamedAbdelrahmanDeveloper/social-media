@@ -1,8 +1,6 @@
 import HeaderApp from '@/components/layouts/HeaderApp'
 import Links from '@/components/layouts/Links'
-import { BellIcon, ChatBubbleLeftRightIcon, Cog6ToothIcon, EllipsisHorizontalCircleIcon, GlobeAltIcon, HomeIcon, MagnifyingGlassIcon, UserIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'hamo',
@@ -24,7 +22,7 @@ export default function RootLayout({
         <div className="drawer-content p-4">          
           {children}
         </div> 
-        <div className="drawer-side lg:sticky lg:top-16 z-50">
+        <div className="drawer-side lg:sticky lg:top-16 z-50 md:z-0">
           <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label> 
           <Links />
         </div>
