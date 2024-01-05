@@ -22,7 +22,7 @@ export default function Profile() {
             </div>
             <div className='p-4 space-y-2'>
                 <div>
-                    <h1 className='text-lg font-bold'>Mohamed Abdelrahman</h1>
+                    <h1 className='text-lg font-bold -mb-1.5'>Mohamed Abdelrahman</h1>
                     <span className='text-sm text-base-content/50'>@m7md0a</span>
                 </div>
                 <div className='flex space-x-2 font-bold text-sm'>
