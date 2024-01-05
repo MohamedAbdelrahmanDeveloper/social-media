@@ -22,16 +22,16 @@ export default function AddPost() {
               <img alt="Tailwind CSS Navbar component" src="https://avatars.githubusercontent.com/u/54208900?v=4" />
             </div>
           </div>
-          <textarea onChange={(e) => setTextLength(e.target.value.length)} className="textarea focus:ring-0 focus:border-none flex-1 placeholder:text-base h-auto"  placeholder="What's on your mind?" ></textarea>
+          <textarea onChange={(e) => setTextLength(e.target.value.length)} minLength={0} maxLength={5000} className="textarea focus:ring-0 focus:border-none flex-1 placeholder:text-base h-auto"  placeholder="What's on your mind?" ></textarea>
         </div>
         <div className="flex justify-end">
-          <div className='border-t md:w-9/12'>
+          <div className='border-t md:w-10/12'>
             <Media ref={inputFileRef} />
             { sensitive && <Sensitive close={() => setSensitive(false)} />}
           </div>
         </div>
-        <div className="flex justify-end">
-            <div className='md:w-9/12 flex flex-col md:flex-row items-end md:justify-between'>
+        <div className="flex justify-end items-center">
+            <div className='md:w-10/12 flex flex-col md:flex-row items-end md:justify-between'>
               <div className='space-x-2'>
                 <ButtonIcon action={handelFileInputClick} Icon={PaperClipIcon} title='Add media attachment' />
                 <ButtonIcon Icon={FaceSmileIcon} title='Insert emoji'/>

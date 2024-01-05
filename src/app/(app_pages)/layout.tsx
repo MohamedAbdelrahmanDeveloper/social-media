@@ -20,13 +20,13 @@ export default function RootLayout({
       </div>
       <div className="container-app drawer lg:drawer-open">
         <input id="my-drawer-left" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex">          
-          <div className='md:w-4/6 p-4'>
+        <div className="drawer-content flex w-full">          
+          <div className='w-full md:w-4/6 p-4'>
             {children}
           </div>
           <SideRight />
         </div> 
-        <div className="drawer-side lg:sticky lg:top-16 z-50 md:z-0">
+        <div className="drawer-side min-w-72 lg:sticky lg:top-16 z-50 md:z-0">
           <label htmlFor="my-drawer-left" aria-label="close sidebar" className="drawer-overlay"></label> 
           <Links />
         </div>
