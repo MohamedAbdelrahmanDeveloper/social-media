@@ -56,3 +56,21 @@
     background: #7a8294;
   }
 }
+
+
+.h-m-screen {
+  @apply h-[calc(100vh-6rem)]
+}
+
+.drawer-side-right {
+  @apply fixed md:sticky top-0 md:top-16 right-0 translate-x-full md:translate-x-0 duration-300
+}
+
+.drawer-right-toggle:checked ~ .drawer-side-right {
+  @apply  translate-x-0 md:translate-x-0 z-50
+}
+
+.drawer-right-toggle:checked ~ .overlay {
+  @apply bg-black/50 fixed inset-0 z-40 
+}
+

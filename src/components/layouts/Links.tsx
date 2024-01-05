@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Links() {
   return (
-    <ul className="menu p-4 min-h-full md:min-h-max w-80 text-base-content space-y-4 [&>li>a]:p-3 bg-base-100 md:bg-base-200">
+    <ul className="menu p-4 h-screen w-80 text-base-content space-y-4 [&>li>a]:p-3 bg-base-100 md:bg-base-200">
         <li>
         <Link href="/">
             <HomeIcon className='w-6'/>

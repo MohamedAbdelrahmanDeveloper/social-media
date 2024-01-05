@@ -1,5 +1,6 @@
 import HeaderApp from '@/components/layouts/HeaderApp'
 import Links from '@/components/layouts/Links'
+import SideRight from '@/components/layouts/SideRight'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -18,12 +19,15 @@ export default function RootLayout({
         <HeaderApp />
       </div>
       <div className="container-app drawer lg:drawer-open">
-        <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content p-4">          
-          {children}
+        <input id="my-drawer-left" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content flex">          
+          <div className='md:w-4/6 p-4'>
+            {children}
+          </div>
+          <SideRight />
         </div> 
         <div className="drawer-side lg:sticky lg:top-16 z-50 md:z-0">
-          <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label> 
+          <label htmlFor="my-drawer-left" aria-label="close sidebar" className="drawer-overlay"></label> 
           <Links />
         </div>
         

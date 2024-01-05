@@ -4,7 +4,7 @@ export default function HeaderApp() {
     return (
         <div className="navbar container-app">
             <div className="flex-1 zz">
-                <label htmlFor="my-drawer-2" className="btn btn-square btn-ghost drawer-button lg:hidden">
+                <label htmlFor="my-drawer-left" className="btn btn-square btn-ghost drawer-button lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </label>
                 <div className='me-4'>
@@ -15,6 +15,7 @@ export default function HeaderApp() {
                 </div>
             </div>
             <div className="flex-none gap-2">
+                {/* <label htmlFor='my-drawer-right' aria-label="close sidebar" className="btn">menu</label>  */}
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
