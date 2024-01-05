@@ -1,3 +1,4 @@
+import Post from '@/components/post/Post'
 import { formatNumber } from '@/components/post/formatNumber'
 import { CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
@@ -10,7 +11,11 @@ export default function Profile() {
         <section>
             <div className='h-52 w-full relative'>
                 <Image className='w-full h-full object-cover' width={500} height={300} src="https://media.bassam.social/036c7df8098402cb69802a6d024108adeeb911677c4895e474d17f95846fe85b.jpg" alt='m7md0a'/> 
-                <Image className='w-24 h-24 rounded-full object-cover absolute -bottom-8 left-4 z-10 p-1 bg-base-100' width={300} height={100} src="https://avatars.githubusercontent.com/u/54208900?v=4" alt='m7md0a'/> 
+                <div className="avatar online absolute -bottom-8 left-4 z-10">
+                    <div className="w-24 rounded-full">
+                        <Image className='w-24 h-24 rounded-full object-cover p-1 bg-base-100' width={300} height={100} src="https://avatars.githubusercontent.com/u/54208900?v=4" alt='m7md0a'/> 
+                    </div>
+                </div>
             </div>
             <div className='flex justify-end px-4 mt-2'>
                 <Link href="/settings/profile" className='btn btn-sm rounded-full btn-outline' >Edit profile</Link>
@@ -38,6 +43,17 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
+        </section>
+        <section className='space-y-2'>
+            <div role="tablist" className="tabs tabs-bordered px-4">
+                <a role="tab" className="tab tab-active">Posts</a>
+                <a role="tab" className="tab">Media</a>
+            </div>
+            <Post />
+            <div className="divider px-4"></div> 
+            <Post /> 
+            <div className="divider px-4"></div> 
+            <Post /> 
         </section>
     </section>
   )
