@@ -9,7 +9,7 @@ export default function page() {
   return (
     <Card classBody='m-p-0 shadow rounded-box'>
         <div className='flex flex-col md:flex-row m-h-screen'>
-            <div className='md:w-2/5 p-3 md:rounded-s-box bg-base-200/50'>
+            <div className='md:w-2/5 h-full p-3 md:rounded-s-box bg-base-200/50'>
                 <div className='flex justify-between'>
                     <BackLink title='Chats' />
                     <div className='flex space-x-2'>

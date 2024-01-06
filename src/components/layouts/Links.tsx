@@ -77,8 +77,8 @@ export default function Links() {
                 </li>
             </ul>
         </li>
-        <Link href="/?post" className='btn w-full btn-primary opacity-85 btn-circle'>Compose</Link>
-        <Link href="/auth/signin" className='btn w-full btn-primary opacity-85 btn-circle'>Auth</Link>
+        <Link href="/?post" className='btn btn-sm md:btn-md w-full btn-primary opacity-85 rounded-full'>Compose</Link>
+        <Link href="/auth/signin" className='btn btn-sm md:btn-md w-full btn-primary opacity-85 rounded-full'>Auth</Link>
     </ul>
   )
 }
