@@ -6,15 +6,13 @@ import { usePathname } from 'next/navigation';
 import Button from '../global/Button';
 
 export default function SideRight() {
-  const path = usePathname()
-  console.log(path);
-  
+  const path = usePathname()  
   return path.startsWith("/chats") ? (
     ''
   ) : path.startsWith("/auth") ?  (
     <div className='space-y-2 pt-5 hidden md:block'>
       <h2 className='text-xl font-bold'>New to Bassam?</h2>
-      <p className='text-base-content/70'>Sign up now to discuss what's happening.</p>
+      <p className='text-base-content/70'>Sign up now to discuss what&apos;s happening.</p>
       <Link href="/auth/signup" >
         <Button className='rounded-full btn-primary w-full mt-2'>Sign up</Button>
       </Link>

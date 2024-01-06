@@ -1,4 +1,5 @@
 import { PlusIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 
@@ -16,7 +17,7 @@ export default function SuggestAccount({fullName, image, username, isOnline, isS
         <Link href='/profile' className='flex space-x-2'>
           <div className={`avatar ${isOnline ? "online": "offline"}`}>
               <div className="w-10 h-10 rounded-full">
-                <img src={image} />
+                <Image width={40} height={50} alt='image' src={image} />
               </div>
           </div>
           <div className='flex flex-col justify-center'>

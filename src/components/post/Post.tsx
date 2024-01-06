@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Like from './Like'
 import Comments from './Comments'
 import Reposts from './Reposts'
+import Image from 'next/image'
 
 export default function Post({shadow}: {shadow?: boolean}) {
   return (
@@ -12,7 +13,7 @@ export default function Post({shadow}: {shadow?: boolean}) {
         <div className='flex items-center space-x-2'>
             <div className="avatar online">
                 <div className="w-12 rounded-full">
-                    <img src="https://avatars.githubusercontent.com/u/54208900?v=4" />
+                    <Image width={40} height={50} alt='image' src="https://avatars.githubusercontent.com/u/54208900?v=4" />
                 </div>
             </div>
             <div className='flex flex-col -space-y-0.5'>

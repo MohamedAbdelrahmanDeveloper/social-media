@@ -14,7 +14,7 @@ export default function notificationPage() {
                 <a role="tab" className="tab">Mentions</a>
             </div>
             <Card className='shadow'>
-                <span>You don't have any notifications of this type yet.</span>
+                <span>You don&apos;t have any notifications of this type yet.</span>
             </Card>
         </section>
     </Card>

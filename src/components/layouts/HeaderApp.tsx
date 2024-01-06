@@ -26,7 +26,7 @@ export default function HeaderApp() {
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-8 h-8 rounded-full">
-                            <img alt="img" src="https://avatars.githubusercontent.com/u/54208900?v=4" />
+                            <Image width={40} height={40} alt="img" src="https://avatars.githubusercontent.com/u/54208900?v=4" />
                         </div>
                     </div>
                     <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 type SuggestAccountType = {
@@ -16,7 +17,7 @@ export default function AccountDetails({fullName, image, username, isOnline, isP
         <Link href={`/chats/@${username}`} className='flex space-x-2'>
           <div className={`avatar ${isOnline ? "online": "offline"}`}>
               <div className="w-10 h-10 rounded-full">
-                <img src={image} />
+                <Image width={40} height={50} alt='image' src={image} />
               </div>
           </div>
           <div className='flex flex-col justify-center'>

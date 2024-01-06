@@ -6,6 +6,7 @@ import ButtonIcon from './ButtonIcon'
 import Button from '@/components/global/Button'
 import Sensitive from './Sensitive'
 import Media from './Media'
+import Image from 'next/image'
 
 export default function AddPost() {
     const [textLength, setTextLength] = useState<number>(0)
@@ -19,7 +20,7 @@ export default function AddPost() {
         <div className="flex space-x-5 items-center">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
             <div className="rounded-full">
-              <img alt="Tailwind CSS Navbar component" src="https://avatars.githubusercontent.com/u/54208900?v=4" />
+              <Image width={40} height={50} alt='image' src="https://avatars.githubusercontent.com/u/54208900?v=4" />
             </div>
           </div>
           <textarea onChange={(e) => setTextLength(e.target.value.length)} minLength={0} maxLength={5000} className="textarea focus:ring-0 focus:border-none flex-1 placeholder:text-base h-auto"  placeholder="What's on your mind?" ></textarea>

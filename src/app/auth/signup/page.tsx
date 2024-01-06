@@ -2,15 +2,12 @@
 import Button from '@/components/global/Button'
 import Card from '@/components/global/Card'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import React from 'react'
 
 export default function page() {
-    const router = useRouter()
     function submitHandler(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
         console.log('signup');
-        router.push('/auth/signin')
     }
   return (
     <Card className='shadow-md'>

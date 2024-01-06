@@ -39,7 +39,7 @@ export default function chat() {
                                     <Image width={40} height={40} alt="chat" src="https://avatars.githubusercontent.com/u/54208900?v=40" />
                                 </div>
                             </div>
-                            <div className="chat-bubble">Hello, I'm Mohamed</div>
+                            <div className="chat-bubble">Hello, I&apos;m Mohamed</div>
                         </div>
                         <div className="chat chat-end">
                             <div className="chat-image avatar">
