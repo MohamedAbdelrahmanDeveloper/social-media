@@ -31,7 +31,7 @@ export default function Profile() {
                     <span><b className='text-primary'>{formatNumber(5156)}</b> Following</span>
                 </div>
                 <div>
-                    <p className='text-base-content/80'>صاحب هذا الاكونت لا يرد على التليفون أو الرسائل إلا في حدود ما تسمح به حالته النفسية لكونها شديدة الاضطراب ولا يغضب نهائياً من معاملته بالمثل..</p>
+                    <p className='text-base-content/80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus animi saepe magnam voluptates incidunt assumenda laboriosam suscipit tempore corporis?</p>
                     <div className='flex flex-col md:flex-row gap-2 text-sm mt-1 text-base-content/75'>
                         <span className='flex items-center space-x-0.5'>
                             <CalendarIcon className='w-5' />
