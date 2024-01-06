@@ -6,9 +6,9 @@ import Like from './Like'
 import Comments from './Comments'
 import Reposts from './Reposts'
 
-export default function Post() {
+export default function Post({shadow}: {shadow?: boolean}) {
   return (
-    <Card>
+    <Card className={`${shadow && "shadow-md"}`} >
         <div className='flex items-center space-x-2'>
             <div className="avatar online">
                 <div className="w-12 rounded-full">

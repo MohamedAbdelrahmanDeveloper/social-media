@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Card({children}: {children: React.ReactNode}) {
+export default function Card({children, className}: {children: React.ReactNode, className?: string}) {
   return (
-    <div className='card bg-base-100'>
+    <div className={`card bg-base-100 ${className}`}>
         <div className='card-body p-5'>
             {children}
         </div>

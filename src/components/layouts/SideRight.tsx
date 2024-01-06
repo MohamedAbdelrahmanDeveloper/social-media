@@ -8,7 +8,7 @@ export default function SideRight() {
         <input id="my-drawer-right" type="checkbox" className="drawer-right-toggle hidden" />
         <label htmlFor='my-drawer-right' aria-label="close sidebar" className="overlay"></label> 
         <div className='drawer-side-right h-screen md:w-2/6 active'>
-            <div className='p-4 h-screen w-80 text-base-content space-y-4 [&>li>a]:p-3 bg-base-100 md:bg-base-200'>
+            <div className='p-4 h-screen w-80 text-base-content space-y-4 [&>li>a]:p-3 bg-base-100 md:bg-transparent'>
               <div className='flex justify-between items-center'>
                 <h3 className='text-xl font-bold'>People To Follow</h3>
                 <Link href='/suggestions' className='link link-primary text-sm'>View all</Link>

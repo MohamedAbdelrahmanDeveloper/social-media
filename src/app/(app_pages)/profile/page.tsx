@@ -1,3 +1,4 @@
+import Card from '@/components/global/Card'
 import Post from '@/components/post/Post'
 import { formatNumber } from '@/components/post/formatNumber'
 import { CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline'
@@ -7,7 +8,8 @@ import React from 'react'
 
 export default function Profile() {
   return (
-    <section className='bg-base-100 rounded-box overflow-hidden'>
+    <Card className='rounded-bodx shadow-md overflow-hidden'>
+
         <section>
             <div className='h-52 w-full relative'>
                 <Image className='w-full h-full object-cover' width={500} height={300} src="https://media.bassam.social/036c7df8098402cb69802a6d024108adeeb911677c4895e474d17f95846fe85b.jpg" alt='m7md0a'/> 
@@ -26,17 +28,17 @@ export default function Profile() {
                     <span className='text-sm text-base-content/50'>@m7md0a</span>
                 </div>
                 <div className='flex space-x-2 font-bold text-sm'>
-                    <p><span className='text-primary'>{formatNumber(8595287)}</span> Followers</p>
-                    <p><span className='text-primary'>{formatNumber(5156)}</span> Following</p>
+                    <span><b className='text-primary'>{formatNumber(8595287)}</b> Followers</span>
+                    <span><b className='text-primary'>{formatNumber(5156)}</b> Following</span>
                 </div>
                 <div>
                     <p className='text-base-content/80'>صاحب هذا الاكونت لا يرد على التليفون أو الرسائل إلا في حدود ما تسمح به حالته النفسية لكونها شديدة الاضطراب ولا يغضب نهائياً من معاملته بالمثل..</p>
-                    <div className='flex flex-col md:flex-row gap-1 text-sm mt-1 text-base-content/75'>
-                        <p className='flex items-center space-x-1'>
+                    <div className='flex flex-col md:flex-row gap-2 text-sm mt-1 text-base-content/75'>
+                        <span className='flex items-center space-x-0.5'>
                             <CalendarIcon className='w-5' />
-                            <span>Joined September 2023</span>
-                        </p>
-                        <a href="https://m-Abdelrahman.vercel.app" className='flex items-center space-x-1'>
+                            <time>Joined September 2023</time>
+                        </span>
+                        <a href="https://m-Abdelrahman.vercel.app" className='flex items-center space-x-0.5'>
                             <MapPinIcon className='w-5' />
                             <span> https://m-Abdelrahman.vercel.app</span>
                         </a>
@@ -55,6 +57,6 @@ export default function Profile() {
             <div className="divider px-4"></div> 
             <Post /> 
         </section>
-    </section>
+    </Card>
   )
 }

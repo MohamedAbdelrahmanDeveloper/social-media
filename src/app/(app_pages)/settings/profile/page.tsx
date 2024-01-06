@@ -13,7 +13,7 @@ export default function EditProfile() {
             <div className='p-4'>
                 <Link href="/settings" className='flex space-x-2'>
                     <ArrowLeftIcon className='w-6'/>
-                    <span>Edit Profile</span>
+                    <span>Settings</span>
                 </Link> 
             </div>
             <div className='h-40 w-full relative'>

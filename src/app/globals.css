@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+  @apply bg-blue-500/5
+}
 .container-app {
     @apply container max-w-[76rem] mx-auto
 }
@@ -71,6 +73,43 @@
 }
 
 .drawer-right-toggle:checked ~ .overlay {
-  @apply bg-black/50 fixed inset-0 z-40 
+  @apply bg-black/50 fixed inset-0 z-40
 }
 
+
+
+.menu li a {
+  font-weight: 600;
+  @apply py-3 px-4 rounded-full
+}
+.menu li > *:not(ul):not(.menu-title):not(details):active,
+.menu li > *:not(ul):not(.menu-title):not(details).active
+{
+  background-color: var(--fallback-pc,oklch(var(--pc)/0.5));
+  @apply text-base-content
+}
+.menu li > *:not(ul):not(.menu-title):not(details).active svg{
+  @apply text-primary
+}
+
+@media (hover: hover) {
+  :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(.active):hover, :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(.active):hover {
+      background-color: var(--fallback-pc,oklch(var(--pc)/0.5));
+  }
+  @supports (color: oklch(0 0 0)) {
+      :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(.active):hover, :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(.active):hover {
+          background-color: var(--fallback-pc,oklch(var(--pc)/0.5));
+      }
+  }
+}
+
+
+:where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active).focus,
+  :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active):focus,
+  :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):is(summary):not(.active):focus-visible,
+  :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(summary):not(.active).focus,
+  :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(summary):not(.active):focus,
+  :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):is(summary):not(.active):focus-visible {
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+    background-color: var(--fallback-pc,oklch(var(--pc)/0.5));
+}

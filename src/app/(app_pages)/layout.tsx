@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <section className='bg-base-200'>
-      <div className='bg-base-100 sticky top-0 z-40'>
+    <section>
+      <div className='bg-base-100 sticky top-0 z-40 shadow'>
         <HeaderApp />
       </div>
       <div className="container-app drawer lg:drawer-open">

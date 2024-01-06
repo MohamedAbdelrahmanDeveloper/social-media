@@ -15,7 +15,7 @@ export default function AddPost() {
         inputFileRef.current?.click();
     }
   return (
-    <Card>
+    <Card className='shadow-md'>
         <div className="flex space-x-5 items-center">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
             <div className="rounded-full">

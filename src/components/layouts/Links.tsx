@@ -4,40 +4,40 @@ import React from 'react'
 
 export default function Links() {
   return (
-    <ul className="menu p-4 h-screen w-80 md:w-72 text-base-content space-y-4 [&>li>a]:p-3 bg-base-100 md:bg-base-200">
+    <ul className="menu p-4 h-screen w-80 md:w-72 text-base-content/70 space-y-4 bg-base-100 md:bg-transparent">
         <li>
-        <Link href="/">
-            <HomeIcon className='w-6'/>
+        <Link href="/" className='active'>
+            <HomeIcon className='w-5'/>
             Home
         </Link>
         </li>
         <li>
-        <Link href="/">
-            <MagnifyingGlassIcon className='w-6'/>
+        <Link href="/search" >
+            <MagnifyingGlassIcon className='w-5'/>
             Search
         </Link>
         </li>
         <li>
         <Link href="/">
-            <BellIcon className='w-6'/>
+            <BellIcon className='w-5'/>
             Notification
         </Link>
         </li>
         <li>
         <Link href="/">
-            <ChatBubbleLeftRightIcon className='w-6'/>
+            <ChatBubbleLeftRightIcon className='w-5'/>
             Messages
         </Link>
         </li>
         <li>
         <Link href="/profile">
-            <UserIcon className='w-6'/>
+            <UserIcon className='w-5'/>
             Profile
         </Link>
         </li>
         <li>
         <Link href="/">
-            <Cog6ToothIcon className='w-6'/>
+            <Cog6ToothIcon className='w-5'/>
             Settings
         </Link>
         </li>
@@ -49,16 +49,17 @@ export default function Links() {
         </li>
         <li>
         <Link href="/">
-            <GlobeAltIcon className='w-6'/>
+            <GlobeAltIcon className='w-5'/>
             Fediverse
         </Link>
         </li>
         <li>
         <Link href="/">
-            <EllipsisHorizontalCircleIcon className='w-6'/>
+            <EllipsisHorizontalCircleIcon className='w-5'/>
             More
         </Link>
         </li>
+        <Link href="/?post" className='btn w-full btn-primary opacity-85 btn-circle'>Compose</Link>
     </ul>
   )
 }
