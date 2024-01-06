@@ -8,6 +8,9 @@ body {
 .container-app {
     @apply container max-w-[76rem] mx-auto
 }
+.m-p-0 {
+  padding: 0px !important;
+}
 
 @layer components {
   /* width */
@@ -60,8 +63,8 @@ body {
 }
 
 
-.h-m-screen {
-  @apply h-[calc(100vh-6rem)]
+.m-h-screen {
+  @apply h-[calc(100vh-7rem)]
 }
 
 .drawer-side-right {
@@ -75,8 +78,6 @@ body {
 .drawer-right-toggle:checked ~ .overlay {
   @apply bg-black/50 fixed inset-0 z-40
 }
-
-
 
 .menu li a {
   font-weight: 600;

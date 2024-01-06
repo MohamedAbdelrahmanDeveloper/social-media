@@ -8,8 +8,7 @@ import React from 'react'
 
 export default function Profile() {
   return (
-    <Card className='rounded-bodx shadow-md overflow-hidden'>
-
+    <Card className='rounded-box shadow-md overflow-hidden' classBody='m-p-0'>
         <section>
             <div className='h-52 w-full relative'>
                 <Image className='w-full h-full object-cover' width={500} height={300} src="https://media.bassam.social/036c7df8098402cb69802a6d024108adeeb911677c4895e474d17f95846fe85b.jpg" alt='m7md0a'/> 

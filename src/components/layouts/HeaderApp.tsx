@@ -2,6 +2,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import InputSearch from '../search/InputSearch'
 
 export default function HeaderApp() {
     return (
@@ -15,18 +16,12 @@ export default function HeaderApp() {
                         <Image width={18} height={18} src="https://media.bassam.social/bassam_palestine_icon.png" alt=""/>
                     </a>
                 </div>
-                <div className="join rounded-full input input-primary h-10 md:w-auto bg-base-200 hidden md:flex">
-                    <input className="text-lg bg-base-200 join-item" placeholder="Search"/>
-                    <button className="join-item">
-                        <MagnifyingGlassIcon className='w-6'/>
-                    </button>
-                </div>
+                <InputSearch isNav />
                 <Link href="/search" className="join-item rounded-r-full md:hidden -ms-4">
                     <MagnifyingGlassIcon className='w-6'/>
                 </Link>
             </div>
             <div className="flex-none gap-2">
-                {/* <label htmlFor='my-drawer-right' aria-label="close sidebar" className="btn">menu</label>  */}
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-8 h-8 rounded-full">
@@ -35,13 +30,13 @@ export default function HeaderApp() {
                     </div>
                     <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
                         <li>
-                            <a className="justify-between">
+                            <Link href="/profile" className="justify-between">
                                 Profile
                                 <span className="badge">New</span>
-                            </a>
+                            </Link>
                         </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li><Link href="/settings">Settings</Link></li>
+                        <li><Link href="/auth/signin">Logout</Link></li>
                     </ul>
                 </div>
             </div>

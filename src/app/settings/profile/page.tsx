@@ -1,9 +1,6 @@
+import BackLink from '@/components/global/BackLink'
 import Button from '@/components/global/Button'
-import Post from '@/components/post/Post'
-import { formatNumber } from '@/components/post/formatNumber'
-import { ArrowLeftIcon, CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 export default function EditProfile() {
@@ -11,10 +8,7 @@ export default function EditProfile() {
     <section className='bg-base-100 rounded-box overflow-hidden'>
         <section>
             <div className='p-4'>
-                <Link href="/settings" className='flex space-x-2'>
-                    <ArrowLeftIcon className='w-6'/>
-                    <span>Settings</span>
-                </Link> 
+                <BackLink title='Settings' />
             </div>
             <div className='h-40 w-full relative'>
                 <Image className='w-full h-full object-cover' width={500} height={300} src="https://media.bassam.social/036c7df8098402cb69802a6d024108adeeb911677c4895e474d17f95846fe85b.jpg" alt='m7md0a'/> 
