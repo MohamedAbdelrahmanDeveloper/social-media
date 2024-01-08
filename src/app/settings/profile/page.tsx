@@ -43,7 +43,7 @@ export default function EditProfile() {
                     <div className="label">
                         <span className="label-text">Your bio</span>
                     </div>
-                    <textarea className="textarea textarea-bordered h-24" placeholder="Tell us about yourself">صاحب هذا الاكونت لا يرد على التليفون أو الرسائل إلا في حدود ما تسمح به حالته النفسية لكونها شديدة الاضطراب ولا يغضب نهائياً من معاملته بالمثل..</textarea>
+                    <textarea className="textarea textarea-bordered h-24" placeholder="Tell us about yourself">Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus animi saepe magnam voluptates incidunt assumenda laboriosam suscipit tempore corporis?</textarea>
                 </label>
                 <Button className='btn-primary w-full mt-2'>Save</Button>
             </form>
