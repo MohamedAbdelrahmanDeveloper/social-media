@@ -17,7 +17,7 @@ export default function searchPage() {
                 <a role="tab" className="tab">Posts</a>
                 <a role="tab" className="tab">Hashtags</a>
             </div>
-            <SuggestAccount isSearch fullName='Mohamed Abdelrahman' username='m7md0a' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
+            <SuggestAccount isSearch fullName='Mohamed Abdelrahman' username='MohamedAbdelrahmanDeveloper' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
             <SuggestAccount isSearch fullName='Mohamed Ali' username='m_ali4' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
             <SuggestAccount isSearch fullName='Kareem Ahmed' username='kareem_1' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
             <SuggestAccount isSearch fullName='Saeed Rady' username='saeed' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>

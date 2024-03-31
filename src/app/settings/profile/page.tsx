@@ -11,11 +11,11 @@ export default function EditProfile() {
                 <BackLink title='Settings' />
             </div>
             <div className='h-40 w-full relative'>
-                <Image className='w-full h-full object-cover' width={500} height={300} src="https://media.bassam.social/036c7df8098402cb69802a6d024108adeeb911677c4895e474d17f95846fe85b.jpg" alt='m7md0a'/> 
+                <Image className='w-full h-full object-cover' width={500} height={300} src="https://media.bassam.social/036c7df8098402cb69802a6d024108adeeb911677c4895e474d17f95846fe85b.jpg" alt='MohamedAbdelrahmanDeveloper'/> 
                 <button className='btn absolute right-2 top-2'>Edit</button>
                 <div className="avatar absolute -bottom-8 left-4 z-10">
                     <div className="w-24 rounded-full">
-                        <Image className='w-24 h-24 rounded-full object-cover p-1 bg-base-100' width={300} height={100} src="https://avatars.githubusercontent.com/u/54208900?v=4" alt='m7md0a'/> 
+                        <Image className='w-24 h-24 rounded-full object-cover p-1 bg-base-100' width={300} height={100} src="https://avatars.githubusercontent.com/u/54208900?v=4" alt='MohamedAbdelrahmanDeveloper'/> 
                     </div>
                     <button className='btn btn-sm -ml-8 mt-16'>Edit</button>
                 </div>

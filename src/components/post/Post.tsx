@@ -19,7 +19,7 @@ export default function Post({shadow}: {shadow?: boolean}) {
             <div className='flex flex-col -space-y-0.5'>
                 <h2>Mohamed Abdelrahman</h2>
                 <span className='text-sm text-base-content/50'>
-                    <Link href='/'>@m7md0a</Link> .
+                    <Link href='/'>@MohamedAbdelrahmanDeveloper</Link> .
                     <time>1d</time>
                 </span>
             </div>

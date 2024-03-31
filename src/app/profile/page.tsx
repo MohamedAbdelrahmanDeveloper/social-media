@@ -11,10 +11,10 @@ export default function Profile() {
     <Card className='rounded-box shadow-md overflow-hidden' classBody='m-p-0'>
         <section>
             <div className='h-52 w-full relative'>
-                <Image className='w-full h-full object-cover' width={500} height={300} src="https://media.bassam.social/036c7df8098402cb69802a6d024108adeeb911677c4895e474d17f95846fe85b.jpg" alt='m7md0a'/> 
+                <Image className='w-full h-full object-cover' width={500} height={300} src="https://media.bassam.social/036c7df8098402cb69802a6d024108adeeb911677c4895e474d17f95846fe85b.jpg" alt='MohamedAbdelrahmanDeveloper'/> 
                 <div className="avatar online absolute -bottom-8 left-4 z-10">
                     <div className="w-24 rounded-full">
-                        <Image className='w-24 h-24 rounded-full object-cover p-1 bg-base-100' width={300} height={100} src="https://avatars.githubusercontent.com/u/54208900?v=4" alt='m7md0a'/> 
+                        <Image className='w-24 h-24 rounded-full object-cover p-1 bg-base-100' width={300} height={100} src="https://avatars.githubusercontent.com/u/54208900?v=4" alt='MohamedAbdelrahmanDeveloper'/> 
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@ export default function Profile() {
             <div className='p-4 space-y-2'>
                 <div>
                     <h1 className='text-lg font-bold -mb-1.5'>Mohamed Abdelrahman</h1>
-                    <span className='text-sm text-base-content/50'>@m7md0a</span>
+                    <span className='text-sm text-base-content/50'>@MohamedAbdelrahmanDeveloper</span>
                 </div>
                 <div className='flex space-x-2 font-bold text-sm'>
                     <span><b className='text-primary'>{formatNumber(8595287)}</b> Followers</span>
@@ -37,9 +37,9 @@ export default function Profile() {
                             <CalendarIcon className='w-5' />
                             <time>Joined September 2023</time>
                         </span>
-                        <a href="https://m-Abdelrahman.vercel.app" className='flex items-center space-x-0.5'>
+                        <a href="https://mohamedabdelrahmandeveloper.vercel.app/" className='flex items-center space-x-0.5'>
                             <MapPinIcon className='w-5' />
-                            <span> https://m-Abdelrahman.vercel.app</span>
+                            <span>mohamedabdelrahmandeveloper.vercel.app</span>
                         </a>
                     </div>
                 </div>

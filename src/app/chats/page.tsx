@@ -18,7 +18,7 @@ export default function page() {
                     </div>
                 </div>
                 <div className='space-y-4 p-2'>
-                    <AccountDetails fullName='Mohamed Abdelrahman' username='m7md0a' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
+                    <AccountDetails fullName='Mohamed Abdelrahman' username='MohamedAbdelrahmanDeveloper' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
                     <AccountDetails fullName='Mohamed Ali' username='m_ali4' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
                     <AccountDetails fullName='Kareem Ahmed' username='kareem_1' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
                     <AccountDetails fullName='Saeed Rady' username='saeed' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>

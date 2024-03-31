@@ -19,7 +19,7 @@ export default function chat() {
                     </div>
                 </div>
                 <div className='space-y-4 p-2'>
-                    <AccountDetails fullName='Mohamed Abdelrahman' username='m7md0a' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
+                    <AccountDetails fullName='Mohamed Abdelrahman' username='MohamedAbdelrahmanDeveloper' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
                     <AccountDetails fullName='Mohamed Ali' username='m_ali4' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
                     <AccountDetails fullName='Kareem Ahmed' username='kareem_1' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
                     <AccountDetails fullName='Saeed Rady' username='saeed' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
@@ -29,7 +29,7 @@ export default function chat() {
             </div>
             <div className='md:w-3/4 bg-base-100 m-h-screen flex flex-col'>
                 <div className='shadow px-3 py-1'>
-                    <AccountDetails isPrivate fullName='Mohamed Abdelrahman' username='m7md0a' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
+                    <AccountDetails isPrivate fullName='Mohamed Abdelrahman' username='MohamedAbdelrahmanDeveloper' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
                 </div>
                 <div className='flex-1'>
                     <div className='p-4 h-full flex flex-col justify-end'>
