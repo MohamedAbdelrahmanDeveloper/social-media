@@ -27,7 +27,7 @@ export default function SideRight() {
           <Link href='/suggestions' className='link link-primary text-sm'>View all</Link>
         </div>
         <div className='flex flex-col space-y-3'>
-          <SuggestAccount fullName='Mohamed Abdelrahman' username='MohamedAbdelrahmanDeveloper' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
+          <SuggestAccount fullName='Mohamed Abdelrahman' username='mohamed' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
           <SuggestAccount fullName='Mohamed Ali' username='m_ali4' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
           <SuggestAccount fullName='Kareem Ahmed' username='kareem_1' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
           <SuggestAccount fullName='Saeed Rady' username='saeed' isOnline={true} image='https://avatars.githubusercontent.com/u/54208900?v=40'/>
